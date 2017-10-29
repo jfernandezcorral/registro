@@ -1,0 +1,1 @@
+export {Registro, pub, sub} from './Registro'

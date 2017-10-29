@@ -1,0 +1,11 @@
+@import '../constantes.scss';
+.root {
+	/*background-color: $front;*/
+	background-color: red;
+	position: fixed;
+	height: 100vh;
+    width: 40vw;
+	right: 0px;
+	transform: translateX(100%);
+	transition: transform .5s ease-out;
+}
