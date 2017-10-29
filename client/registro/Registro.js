@@ -1,6 +1,8 @@
 import React from 'react'
 import estilos from'./Registro.scss'
 import PubSub from 'pubsub-js'
+import cn from 'classnames/bind'
+const cx = cn.bind(estilos)
 export class Registro extends React.Component {
     constructor(props) {
         super(props)
@@ -15,7 +17,7 @@ export class Registro extends React.Component {
             if (data.op == 'mostrar'){
                 this.setState({mostrar: true})
             }
-            if (data.op == 'ocultar'){
+            else if (data.op == 'ocultar'){
                 this.setState({mostrar: false})
             }
         }
@@ -24,10 +26,11 @@ export class Registro extends React.Component {
         PubSub.subscribe('Entrada',this.onMsg)
     }
     render() {
-        let {mostrar} = this.state;
+        const {simple} = this.props
+        const {mostrar} = this.state;
         const style = mostrar? {transform: 'translateX(0%)'}: {transform: 'translateX(100%)'}
         return (
-        	<div style={style} className={estilos.root}>
+        	<div style={simple? {}: style} className={cx({root: !simple, rootSimple: simple})}>
         		dsf
         	</div>
         );

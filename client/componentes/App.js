@@ -31,14 +31,14 @@ export default class App extends React.Component {
     render() {
         return (
         	<div style={{height: '100%', display: 'flex'/*, alignItems: 'stretch'*/}}>
-        		<aside style={{width: '30%', marginRight: '5px'}} className={estilos.panel}>
-        			sdfasdf
-        		</aside>
-        		<section style={{width: '70%'}} className={estilos.panel}>
-                    <a onClick={this.handle}>Abrir dialogo</a><br/>
-                    <a onClick={this.handleimg}>Abrir menú</a><br/>
+        		<section style={{width: '30%'}} className={estilos.panel}>
+                    ghcjh
+                </section>
+                <section style={{width: '70%'}} className={estilos.panel}>
+                    <a onClick={this.handle}>Ocultar</a><br/>
+                    <a onClick={this.handleimg}>Mostrar</a><br/>
         		</section>
-                <Registro />
+                <Registro/>
         	</div>
         );
     }

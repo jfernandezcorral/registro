@@ -1,11 +1,17 @@
 @import '../constantes.scss';
 .root {
 	/*background-color: $front;*/
-	background-color: red;
+	background-color: #cfc;
 	position: fixed;
 	height: 100vh;
     width: 40vw;
 	right: 0px;
 	transform: translateX(100%);
 	transition: transform .5s ease-out;
+}
+.rootSimple {
+	/*background-color: $front;*/
+	background-color: #cfc;
+	height: 100vh;
+    width: 40vw;
 }
