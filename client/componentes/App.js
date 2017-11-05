@@ -9,6 +9,12 @@ export default class App extends React.Component {
         this.handle = this.handle.bind(this)
         this.handleimg = this.handleimg.bind(this)
     }
+    componentDidMount(){
+        pub({op: 'ini',
+            gestor: '123',
+            gestores: [{t: 'a', v: 'a'},{t: 'bbbbbbbbbbbbbbb', v: '123'}]
+        })
+    }
     handle(e){
         /*const diag = <div style={{width: '500px'}}>
             <h1>Se va a enviar el formulario al servidor</h1>

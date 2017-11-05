@@ -1,0 +1,23 @@
+@import '../constantes.scss';
+.cab{
+	background-color: #809daa;
+	padding: 15px 25px 15px 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 2px 2px 0 0;
+	color: #fff;
+}
+.ico{
+	font-family: 'bankia-icons-webfont';
+	color: #fff;
+	margin-right: 7px;
+	-webkit-font-smoothing: antialiased;
+	&:before{
+		content: '\e0b7';
+	}
+}
+.cuerpo{
+	background-color: #e3e9ed;
+	text-align: center;
+	padding: 4px;
+
+}
